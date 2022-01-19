@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel= "stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </head>
+  <body class="cbody">
+    <div class="container mt-5 con" >
+      <div class="modal-dialog modal-sm modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color:sandybrown;">
+                <h5 class="modal-title">Calculator</h5>
+            </div>
+      <div class="modal-body h5">
+        <form>
+          <div class="form-group">
+            <label class="control-label">Enter First Number</label>
+            <input type="text" class="form-control" id="number1" />
+          </div>
+
+          <div class="form-group ">
+            <label class="control-label">Enter Second Number</label>
+            <input type="text" class="form-control" id="number2" />
+          </div>
+
+          <div class="form-group">
+            <label class="control-label">Result</label>
+            <input type="text" class="form-control" id="result" />
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer , footer">
+        <button class="btn btn-success" id="AddButton" onclick="addOperation()">
+          +
+        </button>
+        <button class="btn btn-success" id="SubButton" onclick="subOperation()">
+          -
+        </button>
+        <button class="btn btn-success" id="MulButton" onclick="mulOperation()">
+            *
+          </button>
+          <button class="btn btn-success" id="DivButton" onclick="divOperation()">
+            /
+          </button>
+        
+        </button>
+        </div>
+      </div>
+    </div>
+    <script src="calc.js"></script>
+  </body>
+</html>
